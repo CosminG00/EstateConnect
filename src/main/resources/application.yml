@@ -5,7 +5,7 @@ spring:
   application:
     name: EstateConnect
     frontend:
-      url: http://localhost:5174
+      url: http://localhost:5173
   datasource:
     url: jdbc:postgresql://localhost:5432/estate_connect
     username: postgres
