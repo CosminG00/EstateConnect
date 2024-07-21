@@ -8,8 +8,8 @@ spring:
       url: http://localhost:5173
   datasource:
     url: jdbc:postgresql://localhost:5432/estate_connect
-    username: postgres
-    password: Donadona576
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
   jpa:
     properties:
@@ -22,8 +22,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: applearnsql@gmail.com
-    password: mskmqsnsomyzficg
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
     properties:
       mail:
         smtp:
@@ -39,7 +39,7 @@ spring:
 application:
   security:
     jwt:
-      secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+      secret-key: ${JWT_SECRET_KEY}
       expiration: 86400000 # a day
       activate-client-token:
         expiration: 86400000 # a day
@@ -58,4 +58,4 @@ file:
 
 google:
   api:
-    key: AIzaSyBKcHF5mO7aaNyhmY7iU4H2Te023IeEpSQ
+    key: ${GOOGLE_API_KEY}

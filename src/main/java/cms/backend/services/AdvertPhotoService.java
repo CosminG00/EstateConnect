@@ -1,10 +1,5 @@
 package cms.backend.services;
 
-import cms.backend.constants.PatientConstants;
-import cms.backend.enums.Role;
-import cms.backend.exceptions.ConflictException;
-import cms.backend.models.AgencyModel;
-import cms.backend.models.RoleModel;
 import cms.backend.models.advert.AdvertPhotoModel;
 import cms.backend.repositories.advert.AdvertPhotoRepository;
 import lombok.RequiredArgsConstructor;
